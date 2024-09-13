@@ -1,0 +1,121 @@
+<!-- Welocme to one of my first small projects with HTML and CSS -->
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <style>
+            body {
+                background-image: url('images/background1.jpg'); 
+                background-size: cover;
+                background-position: center; 
+                background-repeat: no-repeat; 
+                height: 100vh; 
+                margin: 0;
+                font-family: Arial, sans-serif; 
+                color: white; 
+            }
+
+            main {
+                max-width: 800px;
+                margin: 0 auto;
+                text-align: center;
+                padding: 20px;
+                background: rgba(0, 0, 0, 0.6); 
+                border-radius: 10px; 
+            }
+
+            footer {
+                text-align: center;
+                padding: 10px;
+                background: rgba(0, 0, 0, 0.8);
+            }
+
+            img {
+                max-width: 100%; 
+                border-radius: 10px; 
+            }
+
+            h1, h2, h3, p {
+                margin-bottom: 20px;
+            }
+
+            ul {
+                list-style: none; 
+                padding: 0; 
+                margin: 0; 
+            }
+
+            ul li {
+                    margin-bottom: 10px; 
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <h1>Rottweiler Photo App by <a href="https://emelisantos.github.io/Landing-Page/" target="_blank"> <em>Emeli Santos</em> </a>!</h1>
+
+            <section>
+                <h2>Rottweiler Photos</h2> 
+
+                <!-- TODO: Add link to cat photos -->
+                <p>See more Rottweiler photos in our gallery.</p>
+                <p>If you want to some inspirations you may touch the following image. It will direct you to a Pinterest board.</p>
+
+                <!-- The next line is code to direct them to my Pinterest board full of cute cats -->
+                <figure>
+                <a href="https://www.pinterest.com/emelisantos1234/rottys/" target="_blank"> <img src="images/rotty3.jpg"
+                    alt="A Rottweiler sticking out its tongue" style="width: 175px; height: auto;"></a> 
+                    <figcaption>A Rottweiler sticking out its tongue</figcaption>
+                </figure>           
+             </section>
+
+            <section>
+                <h2>Rottweilers Lists</h2>
+                <h3>Things Rottweilers love:</h3>
+                <ul>
+                    <li>Cuddles</li>
+                    <li>Fluff toys</li>
+                    <li>Meat</li>
+                </ul>
+
+                <h3>Top 3 things Rottweilers hate:</h3>
+
+                <ul>
+                    <li>Flea treatment</li>
+                    <li>Thunder</li>
+                    <li>Other dogs</li>
+                </ul>
+            </section>
+            <!-- Below will be the cat form -->
+            <section>
+                <h2>Rottweiler Form</h2>
+
+                <form action="#"> 
+                    <input required type="text" name="name" placeholder="Name"> 
+                    <input required type="email" name="email" placeholder="Email">
+                    <textarea name="message" placeholder="Enter a message"></textarea>
+                    <fieldset>
+                        <legend>Is your rotty an indoor or outdoor rotty?</legend>
+                        <label> <input type="radio" id="Indoor" name="indoor-outdoor" value="indoor"> Indoor</label>
+                        <label> <input type="radio" id="Outdoor" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>What's your rottweiler's personality?</legend>
+                        <label><input type="checkbox" id="loving" name="personality" value="loving"> Loving</label>
+                        <input type="checkbox" id="lazy"  name="personality" value="lazy"> <label for="lazy"> Lazy</label>
+                        <input type="checkbox" id="energetic"  name="personality" value="energetic"> <label for="energetic"> Energetic</label>
+                        <input type="checkbox" id="sleepy"  name="personality" value="sleepy"> <label for="sleepy"> Sleepy</label>
+                        <input type="checkbox" id="bossy"  name="personality" value="bossy"> <label for="bossy"> Bossy</label>
+                    </fieldset>
+
+                    <input required type="submit" value="Submit">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>No Copyright - Emeli Santos.   Made by Emeli Santos</p>
+        </footer>
+    </body>
+</html>
